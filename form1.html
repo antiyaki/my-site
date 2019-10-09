@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Задание 2.1</title>
+	<nav class="top-menu"> 
+				<ul class="menu-main"> 
+					<li><a href="index.html">На главную</a></li>  
+					<li><a href="ex1.html">Задание 1</a></li> 
+					<li><a href="ex2.html">Задание 2</a></li>  
+					<li><a href="form2.html">Форма 2</a></li> 
+				</ul> 
+			</nav>
+</head>
+<body>
+	<h2>ЗАО Птицефабрика №1</h2>
+	<form action="mailto:koshara511@mail.ru" method="post" enctype="text/plain">
+		<label for="family-field">Фамилия
+			<input type="text" name="family" id="family-field">
+		</label><br>
+		<label for="ini-field">Инициалы
+			<input type="text" name="inicialy" id="ini-field">
+		</label><br>
+		<label for="password-field">Пароль
+			<input type="password" name="password" id="password-field">
+		</label><br>
+		<label for="adr-field">Адрес получателя
+			<input type="text" name="adres" id="adr-field">
+		</label><br>
+		<label for="col-field">Количество
+			<input type="text" name="colvo" id="col-field">
+		</label><br>
+		Тип
+		<select name="tipe">
+			<option value="Куриные">Куриные</option> 
+		</select>
+		<select name="class">
+			<option value="Отборные">Отборные</option>
+		</select><br>
+		<label>Доставка:
+			<input type="radio" name="dostavka" value="Почтой">Почтой
+			<input type="radio" name="dostavka" value="Электронно">Электронно
+			<input type="radio" name="dostavka" value="Курьером">Курьером
+		</label><br>
+		<label for="treb-field">Требуется накладная
+			<input type="checkbox" name="nakladnaya" id="treb-field"> 
+		</label><br>
+		Дополнительная информация:<br>
+		<label for="dop-field">
+			<textarea name="dop" id="dop-field" rows="3" cols="50">
+			</textarea>
+		</label><br>
+		<input type="submit" value="Заказать">
+		<input type="reset" value="Отменить">
+	</form>
+</body>
+</html>
