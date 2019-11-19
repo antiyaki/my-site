@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css" href="path/to/font-awesome/css/font-awesome.min.css">
 	<meta charset="utf-8">
-	<title>Задание 2.1</title>
+	<title>Скрипт 1</title>
 	<nav class="top-menu"> 
 		<ul class="menu-main"> 
-			<li><a href="index.html">На главную</a></li>  
-			<li><a href="ex1.html">Задание 1</a></li> 
-			<li><a href="ex2.html">Задание 2</a></li> 
-			<li><a href="form1.html">Форма 1</a></li>   
+			<li><a href="index.html">На главную</a></li> 
+			<li><a href="ex4.html">Презентации</a></li> 
+			<li><a href="matrix.html">2-ой скрипт</a></li> 
+			<li><a href="form3.html">3-ий скрипт</a></li> 
+			<li><a href="test.html">Тестирование</a></li> 
 		</ul> 
 	</nav>
 </head>
 <body>
-	<title>
-		Пример формы 
-	</title>
-</head>
-<body>
+	<input type="button" value="window" name="a" OnClick="a();">
+	<input type="button" value="document" name="b" OnClick="b();">
+	<input type="button" value="location" name="c" OnClick="c();">
+	<input type="button" value="navigator" name="d" OnClick="d();">
 
-	<h2>Пример формы регистрации сайта</h2>
-	<form action="mailto:anti.15@yandex.ru" method="post" enctype="text/plain" enctype="multipart/form-data">
-		<label for="login-field">Логин:<br>
-			<input type="text" name="login" id="login-field">
-		</label><br>
-		<label for="password-field">Пароль:<br>
-			<input type="password" name="password" id="password-field">
-		</label><br>
-		<label for="URL-field">URL-адрес сайта:<br>
-			<input type="text" name="URL" id="URL-field" >
-		</label><br>
-		<label for="nazvanie-field">Название сайта:<br>
-			<input type="text" name="nazvanie" id="nazvanie-field">
-		</label><br>
-		Описание сайта:<br>
-		<label for="DopInf-field">
-			<textarea name="DopInf" id="DopInf-field" rows="10" cols="50">
-			</textarea>
-		</label><br>
-		Тема сайта:<br>
-		<select name="inf">
-			<option value="Тема не выбрана">Тема не выбрана</option>
-			<option value="Животные">Животные</option>
-			<option value="Машины">Машины</option>
-		</select><br>
-		<input type="file" name="izobr" value="Обзор..."><br>
-		Баннер 88х31:<br>
-		<input type="reset" value="Очистить">
-		<input type="submit" name="yeah" value="Отправить">
-	</form>
-</body>
+	<script language="JavaScript">
+		function a()
+		{
+var displayLine; //переменная для хранения свойств
+for (var i in navigator) {
+	displayLine =i+"="+navigator;
+	document.write(displayLine+"<BR>")
+}
+}
+function b()
+{
+var displayLine; //переменная для хранения свойств
+for (var a in window) {
+	displayLine =a+"="+window[a];
+	document.write(displayLine+"<BR>")
+}
+}
+
+function c()
+{
+var displayLine; //переменная для хранения свойств
+for (var d in document) {
+	displayLine =d+"="+document[d];
+	document.write(displayLine+"<BR>")
+}
+}
+
+function d()
+{
+var displayLine; //переменная для хранения свойств
+for (var l in location) {
+	displayLine =l+"="+location[l];
+	document.write(displayLine+"<BR>")
+}
+}
+</script>
+</body> 
+</html>
